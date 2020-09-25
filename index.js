@@ -1,5 +1,1 @@
-function hello(){
-    const hello = 'hola'
-    return hello + ' mundo!!'
-   }
-   console.log(hello())
+import {hello} from './lib.js'
