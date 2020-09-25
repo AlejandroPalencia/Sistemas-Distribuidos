@@ -1,0 +1,19 @@
+{
+  "name": "sistemas-distribuidos",
+  "version": "1.0.0",
+  "description": "pr0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlejandroPalencia/Sistemas-Distribuidos.git"
+  },
+  "author": "AlejandroPalencia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlejandroPalencia/Sistemas-Distribuidos/issues"
+  },
+  "homepage": "https://github.com/AlejandroPalencia/Sistemas-Distribuidos#readme"
+}
