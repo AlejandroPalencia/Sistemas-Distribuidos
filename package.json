@@ -12,7 +12,7 @@
   },
   "author": "AlejandroPalencia",
   "license": "ISC",
-  "type": "module"
+  "type":"module", 
   "bugs": {
     "url": "https://github.com/AlejandroPalencia/Sistemas-Distribuidos/issues"
   },
