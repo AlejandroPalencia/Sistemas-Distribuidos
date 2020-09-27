@@ -1,1 +1,1 @@
-import {hello} from './lib.js'
+import {hello, miFactorial} from './lib.js'
