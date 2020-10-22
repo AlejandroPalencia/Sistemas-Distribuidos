@@ -4,7 +4,7 @@ import readline from 'readline'
 const server = 'http://localhost:8080'
 const socket = io(server)
 socket.on('msg', function (msg) {
-    console.log(msg)
+    console.log('Received:' + msg.msg)
 })
 
 async function sendMsg(msg){
