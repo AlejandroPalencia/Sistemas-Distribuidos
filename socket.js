@@ -18,4 +18,12 @@ export function broadcastMsg(msg){
         io.emit('msg', msg)
     else console.error("Call startSocket(server) before sending messages")
    }
+
+app.put('/msg', (req, res) => {
+    console.log('msg received')
+    const msg = req.body
+    res.send('OK')
+    // send the message back (eco)
+    broadcastMsg(msg)
+})
    
