@@ -9,7 +9,7 @@ socket.on('msg', function (msg) {
 
 async function sendMsg(msg){
     try { 
-        await axios.put(server + '/msg', msg)
+        await axios.put(server + '/msg', {msg})
     }
     catch (error){
         console.log(error)
