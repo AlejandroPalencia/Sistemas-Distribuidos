@@ -1,6 +1,6 @@
 import express from 'express'
 import {startSocket} from './socket.js'
-import {broadcatMsg} from './socket.js'
+import {broadcastMsg} from './socket.js'
 const PORT = 8080
 const app = express()
 app.get('/', (req, res) => {
