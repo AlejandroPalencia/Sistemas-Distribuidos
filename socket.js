@@ -15,7 +15,7 @@ export function startSocket(server){
 export function broadcastMsg(msg){
     // enviamos msg a todos, con el tipo de evento 'msg'
     if (io)
-        io.emit('msg', {msg})
+        io.emit('msg', msg)
     else console.error("Call startSocket(server) before sending messages")
    }
 
