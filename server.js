@@ -1,9 +1,11 @@
 import express from 'express'
 import {startSocket, broadcastMsg} from './socket.js'
-import bodyParser from 'body-parser'
+import bodyParser from "body-parser"
 
 const PORT = 8080
 const app = express()
+
+
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({​​​​​​​​extended: false}​​​​​​​​))
 
