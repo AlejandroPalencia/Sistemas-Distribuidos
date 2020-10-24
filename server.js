@@ -8,7 +8,7 @@ app.use(bodyParser.urlencoded({​​​​​​​​extended: false}​​​
 
 app.get('/', (req, res) => {
     res.send('Hello World I am running locally')})
-    
+
 const server = app.listen(PORT, () => console.log("listening at localhost:"+PORT))
 startSocket(server)
 
