@@ -12,9 +12,12 @@
   },
   "author": "AlejandroPalencia",
   "license": "ISC",
-  "type":"module", 
+  "type": "module",
   "bugs": {
     "url": "https://github.com/AlejandroPalencia/Sistemas-Distribuidos/issues"
   },
-  "homepage": "https://github.com/AlejandroPalencia/Sistemas-Distribuidos#readme"
+  "homepage": "https://github.com/AlejandroPalencia/Sistemas-Distribuidos#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0"
+  }
 }
