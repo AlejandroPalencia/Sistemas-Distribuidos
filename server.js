@@ -25,3 +25,9 @@ app.put('/msg', (req, res) => {
     // send the message back (eco)
     broadcastMsg(msg)
 })
+
+process.on('SIGINT', async (code:Signals) => {
+
+    await console.log('Process before Exit event with code: ', code)
+    process.exit() 
+})
