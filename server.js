@@ -1,8 +1,8 @@
 import express from 'express'
 import {startSocket, broadcastMsg} from './socket.js'
 import bodyParser from 'body-parser'
-import {startNGrok} from './ngrok.js'
-const url = await startNGrok(PORT)
+//import {startNGrok} from './ngrok.js'
+//const url = await startNGrok(PORT)
 
 
 const PORT = 8080
@@ -26,8 +26,8 @@ app.put('/msg', (req, res) => {
     broadcastMsg(msg)
 })
 
-process.on('SIGINT', async (code:Signals) => {
+process.on('SIGINT', async (code) => {
 
-    await console.log('Process before Exit event with code: ', code)
+    await console.log('Process before Exit event with code: ', code) //Funcionalidad para cerrar servidor con ctrl+c
     process.exit() 
 })
