@@ -1,6 +1,9 @@
 import express from 'express'
 import {startSocket, broadcastMsg} from './socket.js'
 import bodyParser from 'body-parser'
+import {startNGrok} from './ngrok.js'
+const url = await startNGrok(PORT)
+
 
 const PORT = 8080
 const app = express()
