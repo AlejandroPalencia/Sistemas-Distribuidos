@@ -1,7 +1,7 @@
 import axios from 'axios'
 import io from 'socket.io-client';
 import readline from 'readline'
-const server = 'http://localhost:8080'
+const server = 'http://localhost:8082'
 const socket = io(server)
 socket.on('msg', function (msg) {
     console.log('Received:' + msg.msg)

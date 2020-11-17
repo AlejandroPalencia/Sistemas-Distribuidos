@@ -5,7 +5,7 @@ let ngURL = ''
 export const startNGrok = async function(PORT) {
     const url = await ngrok.connect({
         proto : 'http',
-        ddr : PORT,
+        addr : PORT,
     }, )
     ngURL = url
     console.log (url)
