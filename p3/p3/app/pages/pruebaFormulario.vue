@@ -16,9 +16,7 @@ export default {
   name: 'pruebaFormulario',
   components: { Formulario ,Tabla },
   data: () => ({
-    items: [
-     
-    ]
+    items: []
   }),
   methods: { 
     add(v){  //cuando llamen al método add, añadir items

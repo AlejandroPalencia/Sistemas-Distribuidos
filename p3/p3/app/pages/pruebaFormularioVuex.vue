@@ -11,8 +11,6 @@
 <script>
 
 import{mapActions,mapState} from 'vuex'
-import Formulario from '@/components/Formulario'
-import Tabla from '@/components/Tabla'
 import Estadistica from '@/components/Estadistica'
 export default{
     name: 'pruebaFormulario',
