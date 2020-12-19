@@ -5,8 +5,7 @@
         <formulario @input="add"></formulario>
       </v-card-text>
     </v-card>
-    <estadistica :items="items" class="mx-auto text-center"></estadistica>  <!--m es margin y t es top-->
-
+    <estadistica :items="items" class="display-1 font-weight-thin"></estadistica>  <!--m es margin y t es top-->
   </div>
 </template>
 

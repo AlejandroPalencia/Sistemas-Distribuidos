@@ -22,21 +22,14 @@
       </v-sheet>
     </v-card-text>
 
-    <v-card-text>
-      <div class="display-1 font-weight-thin">
-        Estadisticas
-      </div>
-    </v-card-text>
+    
 
     <v-divider></v-divider>
 
-    <v-card-actions class="justify-center">
-      <v-btn
-        block
-        text
-      >
-        Go to Report
-      </v-btn>
-    </v-card-actions>
+  <label> Estadisticas de gastos </label>
+  
   </v-card>
+  
 </template>
+
+
