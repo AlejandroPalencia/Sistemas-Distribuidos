@@ -11,9 +11,10 @@
 
 <script>
 import Formulario from '~/components/Formulario'
+import Tabla from '@/components/Tabla'
 export default {
   name: 'pruebaFormulario',
-  components: { Formulario,tabla },
+  components: { Formulario, Tabla},
   data: () => ({
     items: [
       {f1: 'X', f2:'Y'}

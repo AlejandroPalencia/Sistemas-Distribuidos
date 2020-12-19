@@ -5,7 +5,7 @@
         <formulario @input="add"></formulario>
       </v-card-text>
     </v-card>
-    <estadistica :items="items" class="display-1 font-weight-thin"></estadistica>  <!--m es margin y t es top-->
+    <estadistica :items="items" class="display-5 font-weight"></estadistica>  <!--m es margin y t es top-->
   </div>
 </template>
 
@@ -14,9 +14,10 @@
 import{mapActions,mapState} from 'vuex'
 import Formulario from '@/components/Formulario'
 import Tabla from '@/components/Tabla'
+import Estadistica from '@/components/Estadistica'
 export default{
     name: 'pruebaFormulario',
-    components: {Formulario},
+    components: {Formulario, Estadistica},
     data:()=>({
     }),
     computed:{

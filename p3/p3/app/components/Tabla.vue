@@ -18,8 +18,8 @@ export default {
   },
   data: () => ({
     headers: [
-      { text: 'Col 1', value: 'f1' },
-      { text: 'Col 2', value: 'f2' },
+      { text: 'Cantidad', value: 'f1' },
+      { text: 'Categoría', value: 'f2' },
     ]
   })
 }
