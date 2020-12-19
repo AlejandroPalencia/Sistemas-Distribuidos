@@ -1,5 +1,6 @@
 <template>
-  <v-card
+<componente @input= 'add'>
+<v-card
     class="mt-4 mx-auto"
     max-width="600"
   >
@@ -37,6 +38,10 @@
 
 <script>
   export default {
+    methods: {
+      metodo(v){}
+    },
+
     data: () => ({
       labels: [
         '01',
@@ -69,9 +74,10 @@
     }),
   }
 </script>
+
 <style>
   .v-sheet--offset {
     top: 0px;
     position: relative;
   }
-</style>
+</style>  
