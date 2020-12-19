@@ -23,12 +23,7 @@ export default{
         ...mapState('modelo', ['items'])
     },
     methods: {
-      add(v){  //cuando llamen al método add, añadir items
-      this.items.push(v)
-      },
-      removeEventListener(v){  //cuando llamen al método add, añadir items
-      this.items.removeEventListener(v)
-      }
+      ...mapActions('modelo', ['add', 'remove', 'initialize'])
     },
     async fetch(){
         await this.initialize()
