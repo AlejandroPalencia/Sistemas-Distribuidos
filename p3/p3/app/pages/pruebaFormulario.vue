@@ -1,0 +1,30 @@
+<template>
+  <div>
+    <v-card elevation="2">
+      <v-card-text>
+        <formulario @input="add"></formulario>
+      </v-card-text>
+    </v-card>
+    <tabla :items="items" class="mt-5"></tabla>  <!--m es margin y t es top-->
+  </div>
+</template>
+
+<script>
+import Formulario from '~/components/Formulario'
+export default {
+  name: 'pruebaFormulario',
+  components: { Formulario },
+  data: () => ({
+    items: [
+      {f1: 'X', f2:'Y'}
+    ]
+  }),
+  methods: { 
+    add(v){  //cuando llamen al método add, añadir items
+      this.items.push(v)
+    }
+  }
+}
+</script>
+
+<style scoped></style>

@@ -2,14 +2,13 @@ import socketIO from 'socket.io'
 
 let io = null
 
-export function startSocket(server, callback){
+export function startSocket(server){
     io = socketIO(server)
     io.on('connection', (socket) => {
         console.log('a user connected')
         socket.on('disconnect', () => {
             console.log('user disconnected');
         })
-        socket.on('msg', callback )
     })
 }
 
