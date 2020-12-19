@@ -5,7 +5,8 @@
         <formulario @input="add"></formulario>
       </v-card-text>
     </v-card>
-    <tabla :items="items" class="mt-5"></tabla>  <!--m es margin y t es top-->
+    <estadistica :items="items" class="mx-auto text-center"></estadistica>  <!--m es margin y t es top-->
+
   </div>
 </template>
 
@@ -16,7 +17,7 @@ import Formulario from '@/components/Formulario'
 import Tabla from '@/components/Tabla'
 export default{
     name: 'pruebaFormulario',
-    components: {Formulario, Tabla, Estadistica},
+    components: {Formulario},
     data:()=>({
     }),
     computed:{
