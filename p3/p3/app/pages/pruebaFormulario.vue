@@ -14,15 +14,18 @@ import Formulario from '~/components/Formulario'
 import Tabla from '@/components/Tabla'
 export default {
   name: 'pruebaFormulario',
-  components: { Formulario, Tabla},
+  components: { Formulario ,Tabla },
   data: () => ({
     items: [
-      {f1: 'X', f2:'Y'}
+     
     ]
   }),
   methods: { 
     add(v){  //cuando llamen al método add, añadir items
       this.items.push(v)
+    },
+    delete(v){
+      this.items.delete(v)
     }
   }
 }

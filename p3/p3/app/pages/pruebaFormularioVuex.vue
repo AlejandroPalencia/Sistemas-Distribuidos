@@ -2,10 +2,9 @@
   <div>
     <v-card elevation="2">
       <v-card-text>
-        <formulario @input="add"></formulario>
+        <estadistica :items="items" class="mt-4 mx-auto"></estadistica>  <!--m es margin y t es top-->
       </v-card-text>
     </v-card>
-    <estadistica :items="items" class="display-5 font-weight"></estadistica>  <!--m es margin y t es top-->
   </div>
 </template>
 
@@ -17,7 +16,7 @@ import Tabla from '@/components/Tabla'
 import Estadistica from '@/components/Estadistica'
 export default{
     name: 'pruebaFormulario',
-    components: {Formulario, Estadistica},
+    components: {Estadistica},
     data:()=>({
     }),
     computed:{

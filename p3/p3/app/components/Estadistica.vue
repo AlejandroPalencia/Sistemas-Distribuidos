@@ -20,7 +20,7 @@
 
     <v-card-text class="pt-0">
       <div class="title font-weight my-4">
-        Estadisticas de Gastos
+        Estadisticas de "Categoría" por cada mes
       </div>
       <v-divider class="my-2"></v-divider>
       <v-icon
@@ -33,21 +33,24 @@
     </v-card-text>
   </v-card>
 </template>
+
+
 <script>
   export default {
     data: () => ({
       labels: [
-        'Enero',
-        'Febrero',
-        'Marzo',
-        'Abril',
-        'Mayo',
-        'Junio',
-        'Agosto',
-        'Septiembre',
-        'Octubre',
-        'Noviembre',
-        'Diciembre'
+        '01',
+        '02',
+        '03',
+        '04',
+        '05',
+        '06',
+        '07',
+        '08',
+        '09',
+        '10',
+        '11',
+        '12'
       ],
       value: [
         200,
@@ -61,6 +64,7 @@
         240,
         270,
         320,
+        100
       ],
     }),
   }

@@ -18,7 +18,7 @@ export default {
   },
   data: () => ({
     headers: [
-      { text: 'Cantidad', value: 'f1' },
+      { text: 'Euros', value: 'f1' },
       { text: 'Categoría', value: 'f2' },
     ]
   })
