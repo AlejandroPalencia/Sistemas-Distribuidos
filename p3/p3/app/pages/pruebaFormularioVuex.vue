@@ -16,14 +16,19 @@ import Formulario from '@/components/Formulario'
 import Tabla from '@/components/Tabla'
 export default{
     name: 'pruebaFormulario',
-    components: {Formulario, Tabla},
+    components: {Formulario, Tabla, Estadistica},
     data:()=>({
     }),
     computed:{
         ...mapState('modelo', ['items'])
     },
     methods: {
-        ...mapActions('modelo',['add', 'remove', 'initialize'])
+      add(v){  //cuando llamen al método add, añadir items
+      this.items.push(v)
+      },
+      removeEventListener(v){  //cuando llamen al método add, añadir items
+      this.items.removeEventListener(v)
+      }
     },
     async fetch(){
         await this.initialize()
