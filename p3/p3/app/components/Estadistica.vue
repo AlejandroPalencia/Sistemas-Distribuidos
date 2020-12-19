@@ -31,5 +31,3 @@
   </v-card>
   
 </template>
-
-

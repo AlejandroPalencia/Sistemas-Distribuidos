@@ -13,7 +13,7 @@
 import Formulario from '~/components/Formulario'
 export default {
   name: 'pruebaFormulario',
-  components: { Formulario },
+  components: { Formulario,tabla },
   data: () => ({
     items: [
       {f1: 'X', f2:'Y'}
